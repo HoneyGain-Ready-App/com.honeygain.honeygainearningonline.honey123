@@ -3,25 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/honeygaincase123_bggg"
+    android:background="@color/bg"
     android:gravity="center"
     android:orientation="vertical"
     android:weightSum="3">
 
 
-    <FrameLayout
-        android:id="@+id/fl_adplaceholder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="visible">
-
-
-    </FrameLayout>
-
+    <include layout="@layout/honeygaincase123_relativelayout"/>
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
@@ -29,7 +19,6 @@
 
 
         <LinearLayout
-
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -43,13 +32,13 @@
                 android:layout_marginTop="20.0dip"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/white"
                 android:fontFamily="@font/a"
                 android:gravity="center"
                 android:text="Signing Off. Take Care"
-                android:textColor="@color/fontcolor"
+                android:textColor="@color/black"
                 android:textSize="20.0dip"
-                android:textStyle="bold"
-                android:backgroundTint="#fff" />
+                android:textStyle="bold" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -90,11 +79,11 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="@font/a"
                     android:text="Yes Exit "
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:backgroundTint="#fff"
                     app:icon="@drawable/honeygaincase123_baseline_exit_to_app_24"
                     app:iconTint="@color/black" />
 
@@ -104,11 +93,11 @@
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/white"
                     android:fontFamily="@font/a"
                     android:text="Previous"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:backgroundTint="#fff"
                     app:icon="@drawable/honeygaincase123_baseline_arrow_forward_24"
                     app:iconGravity="end"
                     app:iconTint="@color/black" />
@@ -118,14 +107,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <FrameLayout
-
-        android:id="@+id/fl_b"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="bottom"
-        android:visibility="visible"></FrameLayout>
 
 </LinearLayout>
